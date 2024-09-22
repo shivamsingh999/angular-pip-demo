@@ -1,0 +1,21 @@
+{
+    "transactions": [
+      {
+        "id": 1,
+        "date": "2024-09-01",
+        "description": "Salary",
+        "category": "Income",
+        "amount": 3000,
+        "type": "income"
+      },
+      {
+        "id": 2,
+        "date": "2024-09-05",
+        "description": "Rent",
+        "category": "Expense",
+        "amount": 800,
+        "type": "expense"
+      }
+    ]
+  }
+  

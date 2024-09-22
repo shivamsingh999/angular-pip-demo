@@ -1,0 +1,94 @@
+.finance-tracker {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  .dashboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .transactions {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .transactions table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transactions th, .transactions td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .transactions th {
+    background-color: #f0f0f0;
+  }
+  
+  .transactions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .transactions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .budget {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .budget .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .budget label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .budget input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .budget button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .budget button:hover {
+    background-color: #218838;
+  }
+  

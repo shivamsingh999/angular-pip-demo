@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>Finance Tracker</h2>
+    
+    <!-- Transaction List -->
+    <ul>
+      <li *ngFor="let transaction of transactions()">
+        {{ transaction.description }} - {{ transaction.amount | currency }}
+        <button (click)="editTransaction(transaction)">Edit</button>
+        <button (click)="deleteTransaction(transaction.id)">Delete</button>
+      </li>
+    </ul>
+    
+    <!-- Edit Form -->
+    <form *ngIf="editForm" [formGroup]="editForm" (ngSubmit)="saveTransaction()">
+      <label>Date:</label>
+      <input formControlName="date" />
+      <label>Description:</label>
+      <input formControlName="description" />
+      <label>Category:</label>
+      <input formControlName="category" />
+      <label>Amount:</label>
+      <input type="number" formControlName="amount" />
+      <label>Type:</label>
+      <select formControlName="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <button type="submit">Save</button>
+    </form>
+  
+    <!-- Budget Form -->
+    <form [formGroup]="budgetForm" (ngSubmit)="updateBudget()">
+      <label>Category:</label>
+      <input formControlName="category" />
+      <label>Amount:</label>
+      <input type="number" formControlName="amount" />
+      <button type="submit">Update Budget</button>
+    </form>
+  </div>
