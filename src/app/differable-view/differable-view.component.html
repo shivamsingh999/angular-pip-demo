@@ -1,1 +1,21 @@
-<p>differable-view works!</p>
+<div class="item-list">
+    <h2>Using *ngFor</h2>
+    <ul>
+        <li *ngFor="let item of items">
+            {{ item.name }}
+        </li>
+
+    </ul>
+
+    <h2>Using for (Angular v18)</h2>
+    <ul>
+        
+            @for (item of items; track item.name) {
+        <li>{{ item.name }}</li>
+        } @empty {
+        <li>There are no items.</li>
+        }
+        
+
+    </ul>
+</div>
