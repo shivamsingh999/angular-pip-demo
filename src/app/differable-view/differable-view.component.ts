@@ -1,12 +1,22 @@
-import { Component } from '@angular/core';
+
+import { Component, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-differable-view',
-  standalone: true,
-  imports: [],
-  templateUrl: './differable-view.component.html',
-  styleUrl: './differable-view.component.css'
-})
-export class DifferableViewComponent {
+    templateUrl: './differable-view.component.html',
+    imports: [CommonModule],
 
+  styleUrl: './differable-view.component.css',
+  standalone: true
+})
+
+export class DifferableViewComponent
+  {
+    items = [
+      { name: 'Angular' },
+      { name: 'React' },
+      { name: 'Vue' },
+      { name: 'Svelte' }
+    ];
 }
